@@ -1,0 +1,38 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelModule_behav xil_defaultlib.TopLevelModule xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 10 for port 'count' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/top_level.v:32]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 10 for port 'v_count' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/top_level.v:33]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 21 for port 'pixel_x' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/top_level.v:49]
+WARNING: [VRFC 10-3091] actual bit length 21 differs from formal bit length 10 for port 'pix_x' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/text.v:33]
+WARNING: [VRFC 10-3091] actual bit length 21 differs from formal bit length 10 for port 'pix_x' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/text.v:36]
+WARNING: [VRFC 10-3091] actual bit length 21 differs from formal bit length 10 for port 'pix_x' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/text.v:39]
+WARNING: [VRFC 10-3091] actual bit length 21 differs from formal bit length 10 for port 'pixel_x' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/pixel_gen.v:133]
+WARNING: [VRFC 10-3091] actual bit length 21 differs from formal bit length 10 for port 'pixel_x' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/pixel_gen.v:139]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 10 for port 'h_count' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/top_level.v:53]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.h_count
+Compiling module xil_defaultlib.v_count
+Compiling module xil_defaultlib.ps2_rx
+Compiling module xil_defaultlib.keyboard
+Compiling module xil_defaultlib.font_rom
+Compiling module xil_defaultlib.time_text
+Compiling module xil_defaultlib.start
+Compiling module xil_defaultlib.finish
+Compiling module xil_defaultlib.game_over
+Compiling module xil_defaultlib.text
+Compiling module xil_defaultlib.road_default
+Compiling module xil_defaultlib.car_default
+Compiling module xil_defaultlib.pixel_gen
+Compiling module xil_defaultlib.game_state
+Compiling module xil_defaultlib.vga_sync
+Compiling module xil_defaultlib.TopLevelModule
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TopLevelModule_behav
