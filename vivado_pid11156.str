@@ -1,0 +1,571 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 11156
+License: Customer
+
+Current time: 	Fri Dec 17 03:26:25 PKT 2021
+Time zone: 	Pakistan Standard Time (Asia/Karachi)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	jazze
+User home directory: C:/Users/jazze
+User working directory: C:/Users/jazze/Desktop/my/THEREALGAME_2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/jazze/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/jazze/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/jazze/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/jazze/Desktop/my/THEREALGAME_2/vivado.log
+Vivado journal file location: 	C:/Users/jazze/Desktop/my/THEREALGAME_2/vivado.jou
+Engine tmp dir: 	C:/Users/jazze/Desktop/my/THEREALGAME_2/.Xil/Vivado-11156-DESKTOP-RVF5401
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	190 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,011 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  1414 ms.
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\jazze\Desktop\my\THEREALGAME_2\THEREALGAME.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1180 ms.
+// Tcl Message: open_project C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// HMemoryUtils.trashcanNow. Engine heap size: 1,011 MB. GUI used memory: 52 MB. Current time: 12/17/21, 3:26:27 AM PKT
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 98 MB (+100790kb) [00:00:22]
+// [Engine Memory]: 1,011 MB (+908986kb) [00:00:22]
+// [GUI Memory]: 107 MB (+4228kb) [00:00:23]
+// [GUI Memory]: 119 MB (+6815kb) [00:00:26]
+// WARNING: HEventQueue.dispatchEvent() is taking  7001 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:13 . Memory (MB): peak = 1024.953 ; gain = 0.000 
+// Project name: THEREALGAME; location: C:/Users/jazze/Desktop/my/THEREALGAME_2; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz (cs)
+// WARNING: HEventQueue.dispatchEvent() is taking  2964 ms.
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+// Tcl Message: update_compile_order -fileset sources_1 
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (J, cs)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (J, cs)
+// [GUI Memory]: 132 MB (+6753kb) [00:00:42]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Schematic]", 26, false); // u (J, cs)
+// bJ (cs): Synthesis is Out-of-date: addNotify
+selectButton(PAResourceQtoS.StaleRunDialog_OPEN_DESIGN, "Open Design"); // a (bJ)
+// bz (cs):  Open Synthesized Design : addNotify
+dismissDialog("Synthesis is Out-of-date"); // bJ (cs)
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a35tcpg236-1 
+// [Engine Memory]: 1,192 MB (+136542kb) [00:00:56]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,192 MB. GUI used memory: 70 MB. Current time: 12/17/21, 3:27:06 AM PKT
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,210 MB. GUI used memory: 69 MB. Current time: 12/17/21, 3:27:08 AM PKT
+// Xgd.load filename: C:/Xilinx/Vivado/2020.1/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 0.9s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.1s
+// [Engine Memory]: 1,253 MB (+832kb) [00:01:01]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,319 MB (+4180kb) [00:01:02]
+// Device: addNotify
+// DeviceView Instantiated
+// [GUI Memory]: 142 MB (+3309kb) [00:01:04]
+// WARNING: HEventQueue.dispatchEvent() is taking  3041 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1087.590 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 342 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc] Finished Parsing XDC File [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1207.352 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 2 instances were transformed.   LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 2 instances  
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:17 . Memory (MB): peak = 1341.426 ; gain = 316.473 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 18 seconds
+dismissDialog("Open Synthesized Design"); // bz (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_PORTS_WINDOW, "I/O Ports"); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_PORTS_WINDOW
+selectTab((HResource) null, (HResource) null, "I/O Ports", 5); // aL (aI, cs)
+selectTab((HResource) null, (String) null, (HResource) null, "I/O Ports", 5, false, true); // aL (aI, cs) - Double Click
+maximizeFrame(PAResourceOtoP.PAViews_IO_PORTS, "I/O Ports"); // aA (aL, cs)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (10) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 5); // z (J, cs)
+// [GUI Memory]: 153 MB (+4622kb) [00:01:14]
+// [Engine Memory]: 1,390 MB (+4594kb) [00:01:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,498 MB. GUI used memory: 98 MB. Current time: 12/17/21, 3:27:31 AM PKT
+// RouteApi::initDelayMediator elapsed time: 18.6s
+// [Engine Memory]: 1,747 MB (+301420kb) [00:01:23]
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// WARNING: HEventQueue.dispatchEvent() is taking  10798643 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,758 MB. GUI used memory: 97 MB. Current time: 12/17/21, 6:41:28 AM PKT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10805640 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 10805640 ms. Increasing delay to 32416920 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  13334750 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,758 MB. GUI used memory: 88 MB. Current time: 12/17/21, 10:23:53 AM PKT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 13339820 ms. Increasing delay to 4000 ms.
+// Elapsed time: 25237 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (J, cs) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+unMaximizeFrame(PAResourceOtoP.PAViews_IO_PORTS, "I/O Ports"); // aA (aL, cs)
+// PAPropertyPanels.initPanels (top_level.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v)]", 1, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), clock_Div : clk_div (clk_div.v)]", 2, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), clock_Div : clk_div (clk_div.v)]", 2, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), clock_Div : clk_div (clk_div.v)]", 2, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), h_counter : h_count (h_counter.v)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), h_counter : h_count (h_counter.v)]", 3, false, false, false, false, false, true); // B (F, cs) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,768 MB. GUI used memory: 91 MB. Current time: 12/17/21, 10:28:08 AM PKT
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), v_counter : v_count (v_counter.v)]", 4, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), v_counter : v_count (v_counter.v)]", 4, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), inkey : keyboard (keyboard.v)]", 5, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), inkey : keyboard (keyboard.v)]", 5, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), inkey : keyboard (keyboard.v), ps2 : ps2_rx (ps2_rx.v)]", 6, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), inkey : keyboard (keyboard.v), ps2 : ps2_rx (ps2_rx.v)]", 6, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v)]", 7, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v)]", 7, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), mytext : text (text.v)]", 8, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), mytext : text (text.v), font_unit : font_rom (font_rom.v)]", 9, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), mytext : text (text.v), mytime : time_text (time_text.v)]", 10, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), mytext : text (text.v), mytime : time_text (time_text.v)]", 10, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), mytext : text (text.v), mystart : start (start.v)]", 11, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), mytext : text (text.v), mystart : start (start.v)]", 11, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), mytext : text (text.v), myfinish : finish (finish.v)]", 12, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), mytext : text (text.v), myfinish : finish (finish.v)]", 12, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), mytext : text (text.v), crash : game_over (gameover.v)]", 13, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), mytext : text (text.v), crash : game_over (gameover.v)]", 13, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), race_road : road (road.v)]", 14, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), race_road : road (road.v)]", 14, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), mycar : car (car.v)]", 15, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), mycar : car (car.v)]", 15, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), game_states : game_state (game_state.v)]", 16, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), game_states : game_state (game_state.v)]", 16, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), Vga_Sync : vga_sync (vga_sync.v)]", 17, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), Vga_Sync : vga_sync (vga_sync.v)]", 17, false, false, false, false, false, true); // B (F, cs) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,788 MB. GUI used memory: 97 MB. Current time: 12/17/21, 10:28:43 AM PKT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_sync.v", 16); // m (l, cs)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_sync.v", 16, false, true); // m (l, cs) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N (aI, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "time_text.v", 9); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "start.v", 10); // m (l, cs)
+selectCodeEditor("start.v", 290, 112); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "finish.v", 11); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "start.v", 10); // m (l, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,830 MB. GUI used memory: 97 MB. Current time: 12/17/21, 10:29:03 AM PKT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "time_text.v", 9); // m (l, cs)
+// [Engine Memory]: 1,836 MB (+2260kb) [07:02:57]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "start.v", 10); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "time_text.v", 9); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "start.v", 10); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "time_text.v", 9); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "start.v", 10); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "time_text.v", 9); // m (l, cs)
+// Elapsed time: 423 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "text.v", 8); // m (l, cs)
+selectCodeEditor("text.v", 285, 184); // bP (w, cs)
+// Elapsed time: 87 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "time_text.v", 9); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "text.v", 8); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pixel_gen.v", 7); // m (l, cs)
+selectCodeEditor("pixel_gen.v", 218, 199); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "start.v", 10); // m (l, cs)
+// WARNING: HEventQueue.dispatchEvent() is taking  92447 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 585 ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 335 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "car.v", 14); // m (l, cs)
+selectCodeEditor("car.v", 409, 199); // bP (w, cs)
+// Elapsed time: 52 seconds
+selectCodeEditor("car.v", 590, 165); // bP (w, cs)
+// WARNING: HEventQueue.dispatchEvent() is taking  486267 ms.
+// Elapsed time: 688 seconds
+selectCodeEditor("car.v", 281, 159); // bP (w, cs)
+selectCodeEditor("car.v", 367, 104); // bP (w, cs)
+// Elapsed time: 27 seconds
+selectCodeEditor("car.v", 91, 304); // bP (w, cs)
+// Elapsed time: 13 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "time_text.v", 0); // m (l, cs)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "game_state.v", 1); // m (l, cs)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (J, cs) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (J, cs) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true, false, false, false, false, true); // u (J, cs) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (J, cs) - Node
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), race_road : road (road.v)]", 14, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), race_road : road (road.v)]", 14, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "road.v", 1); // m (l, cs)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "road.v", 1, false, true); // m (l, cs) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N (aI, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "road.v", 1); // m (l, cs)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "road.v", 1, false, true); // m (l, cs) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N (aI, cs)
+selectCodeEditor("road.v", 459, 161); // bP (w, cs)
+selectCodeEditor("road.v", 146, 138); // bP (w, cs)
+selectCodeEditor("road.v", 146, 138, false, false, false, false, true); // bP (w, cs) - Double Click
+// Elapsed time: 31 seconds
+selectCodeEditor("road.v", 214, 177); // bP (w, cs)
+selectCodeEditor("road.v", 214, 177, false, false, false, true, false); // bP (w, cs) - Popup Trigger
+selectCodeEditor("road.v", 174, 205); // bP (w, cs)
+// Elapsed time: 34 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// WARNING: HEventQueue.dispatchEvent() is taking  1638 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,840 MB. GUI used memory: 97 MB. Current time: 12/17/21, 10:59:03 AM PKT
+// Elapsed time: 34 seconds
+selectCodeEditor("road.v", 256, 195); // bP (w, cs)
+// Elapsed time: 25 seconds
+selectCodeEditor("road.v", 854, 188); // bP (w, cs)
+selectCodeEditor("road.v", 733, 259); // bP (w, cs)
+// Elapsed time: 16 seconds
+typeControlKey((HResource) null, "road.v", 'c'); // bP (w, cs)
+typeControlKey((HResource) null, "road.v", 'c'); // bP (w, cs)
+selectCodeEditor("road.v", 189, 256); // bP (w, cs)
+// Elapsed time: 105 seconds
+selectCodeEditor("road.v", 235, 209); // bP (w, cs)
+typeControlKey((HResource) null, "road.v", 'c'); // bP (w, cs)
+// Elapsed time: 72 seconds
+selectCodeEditor("road.v", 328, 235); // bP (w, cs)
+selectCodeEditor("road.v", 328, 235); // bP (w, cs)
+selectCodeEditor("road.v", 260, 208); // bP (w, cs)
+selectCodeEditor("road.v", 268, 209); // bP (w, cs)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "car.v", 0); // m (l, cs)
+selectCodeEditor("car.v", 235, 158); // bP (w, cs)
+// Elapsed time: 15 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 10 seconds
+selectCodeEditor("car.v", 746, 313); // bP (w, cs)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "car.v", 'c'); // bP (w, cs)
+typeControlKey((HResource) null, "car.v", 'c'); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 72 seconds
+selectCodeEditor("car.v", 408, 67); // bP (w, cs)
+// Elapsed time: 75 seconds
+selectCodeEditor("car.v", 271, 268); // bP (w, cs)
+selectCodeEditor("car.v", 87, 398); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("car.v", 194, 195); // bP (w, cs)
+selectCodeEditor("car.v", 194, 195, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("car.v", 194, 195); // bP (w, cs)
+selectCodeEditor("car.v", 194, 195); // bP (w, cs)
+selectCodeEditor("car.v", 194, 195, false, false, false, false, true); // bP (w, cs) - Double Click
+// Elapsed time: 40 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "road.v", 1); // m (l, cs)
+selectCodeEditor("road.v", 317, 168); // bP (w, cs)
+// Elapsed time: 171 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+// WARNING: HEventQueue.dispatchEvent() is taking  3808 ms.
+// Elapsed time: 37 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v)]", 7, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v)]", 7, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), v_counter : v_count (v_counter.v)]", 4, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), v_counter : v_count (v_counter.v)]", 4, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), h_counter : h_count (h_counter.v)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), h_counter : h_count (h_counter.v)]", 3, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), Vga_Sync : vga_sync (vga_sync.v)]", 9, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), Vga_Sync : vga_sync (vga_sync.v)]", 9, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "v_counter.v", 3); // m (l, cs)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "v_counter.v", 3, false, true); // m (l, cs) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N (aI, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "v_counter.v", 3); // m (l, cs)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "v_counter.v", 3, false, true); // m (l, cs) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N (aI, cs)
+selectCodeEditor("v_counter.v", 421, 218); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "h_counter.v", 4); // m (l, cs)
+selectCodeEditor("h_counter.v", 334, 144); // bP (w, cs)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "v_counter.v", 3); // m (l, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_sync.v", 5); // m (l, cs)
+selectCodeEditor("vga_sync.v", 360, 178); // bP (w, cs)
+// Elapsed time: 35 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v)]", 7); // B (F, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("vga_sync.v", 181, 59); // bP (w, cs)
+// Elapsed time: 33 seconds
+selectCodeEditor("vga_sync.v", 218, 189); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), mytext : text (text.v)]", 8, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), mytext : text (text.v)]", 8, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectCodeEditor("text.v", 89, 188); // bP (w, cs)
+// Elapsed time: 13 seconds
+selectCodeEditor("text.v", 401, 254); // bP (w, cs)
+selectCodeEditor("text.v", 344, 98); // bP (w, cs)
+// Elapsed time: 49 seconds
+selectCodeEditor("text.v", 26, 313); // bP (w, cs)
+selectCodeEditor("text.v", 325, 161); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), race_road : road (road.v)]", 9, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), race_road : road (road.v)]", 9, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("road.v", 184, 185); // bP (w, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), mycar : car (car.v)]", 10, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), mycar : car (car.v)]", 10, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), pixel_generator : pixel_gen (pixel_gen.v), mycar : car (car.v)]", 10, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pixel_gen.v", 2); // m (l, cs)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pixel_gen.v", 2, false, true); // m (l, cs) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N (aI, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pixel_gen.v", 2); // m (l, cs)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pixel_gen.v", 2, false, true); // m (l, cs) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N (aI, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,840 MB. GUI used memory: 98 MB. Current time: 12/17/21, 11:29:05 AM PKT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,840 MB. GUI used memory: 98 MB. Current time: 12/17/21, 11:59:05 AM PKT
+// WARNING: HEventQueue.dispatchEvent() is taking  55238 ms.
+// Elapsed time: 2840 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 32, true); // u (J, cs) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bz (cs):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1041 ms.
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bz (cs)
+// Elapsed time: 17 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (ds, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bz (cs):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2020.1   **** Build date : May 27 2020 at 20:24:38     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ****** Xilinx cs_server v2020.1.0   **** Build date : May 14 2020-06:10:29     ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1883.066 ; gain = 16.039 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  6598 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF3053A 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,037 MB. GUI used memory: 103 MB. Current time: 12/17/21, 12:03:01 PM PKT
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3195.496 ; gain = 1312.430 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 2,040 MB (+118043kb) [08:36:52]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 20 seconds
+dismissDialog("Auto Connect"); // bz (cs)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cs)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cs): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bz (cs):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cs)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bz (cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,067 MB. GUI used memory: 104 MB. Current time: 12/17/21, 12:04:14 PM PKT
+// [GUI Memory]: 162 MB (+1479kb) [08:41:13]
+// Elapsed time: 641 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (J, cs) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+unMinimizeFrame(RDIResource.RDIViews_PROPERTIES, "Source File Properties"); // aA (aL)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), inkey : keyboard (keyboard.v)]", 5, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevelModule (top_level.v), inkey : keyboard (keyboard.v)]", 5, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 7); // m (l, cs)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 7, false, true); // m (l, cs) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N (aI, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 7); // m (l, cs)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 7, false, true); // m (l, cs) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N (aI, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 7); // m (l, cs)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "keyboard.v", 7, false, true); // m (l, cs) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N (aI, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "vga_sync.v", 5); // m (l, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,069 MB. GUI used memory: 106 MB. Current time: 12/17/21, 12:34:14 PM PKT
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF3053A 
+// n (cs): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  10799220 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,069 MB. GUI used memory: 105 MB. Current time: 12/17/21, 3:54:02 PM PKT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4209 ms. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11904739 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1166 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,069 MB. GUI used memory: 106 MB. Current time: 12/17/21, 7:12:39 PM PKT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3933 ms. Increasing delay to 6000 ms.

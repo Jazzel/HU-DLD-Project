@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Dec 17 02:00:28 2021
+# Process ID: 3352
+# Current directory: C:/Users/jazze/Desktop/my/THEREALGAME_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10032 C:\Users\jazze\Desktop\my\THEREALGAME_2\THEREALGAME.xpr
+# Log file: C:/Users/jazze/Desktop/my/THEREALGAME_2/vivado.log
+# Journal file: C:/Users/jazze/Desktop/my/THEREALGAME_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.xpr
+update_compile_order -fileset sources_1

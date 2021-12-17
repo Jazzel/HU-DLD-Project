@@ -1,0 +1,1180 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Dec 11 15:05:03 2021
+# Process ID: 15468
+# Current directory: C:/Users/jazze/Desktop/my/THEREALGAME_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12160 C:\Users\jazze\Desktop\my\THEREALGAME_2\THEREALGAME.xpr
+# Log file: C:/Users/jazze/Desktop/my/THEREALGAME_2/vivado.log
+# Journal file: C:/Users/jazze/Desktop/my/THEREALGAME_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 1024.754 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-06:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 1024.754 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2A53A
+open_hw_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2138.492 ; gain = 1113.738
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CarState' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CarState_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.sim/sim_1/behav/xsim'
+"xelab -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CarState_behav xil_defaultlib.CarState xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CarState_behav xil_defaultlib.CarState xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CarState_behav -key {Behavioral:sim_1:Functional:CarState} -tclbatch {CarState.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source CarState.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CarState_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2222.063 ; gain = 14.762
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: TopLevelModule
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2740.645 ; gain = 249.590
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopLevelModule' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/top_level.v:4]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/clk_div.v:3]
+	Parameter div bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/clk_div.v:3]
+INFO: [Synth 8-6157] synthesizing module 'h_count' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'h_count' (2#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'v_count' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'v_count' (3#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/vga_sync.v:3]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (4#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/vga_sync.v:3]
+INFO: [Synth 8-6157] synthesizing module 'scoreState' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/scoreState.v:3]
+INFO: [Synth 8-6157] synthesizing module 'D_FF' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/D_ff.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'D_FF' (5#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/D_ff.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'scoreState' (6#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/scoreState.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pixel_gen' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/pixel_gen.v:134]
+INFO: [Synth 8-6157] synthesizing module 'text' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/text.v:23]
+INFO: [Synth 8-6157] synthesizing module 'font_rom' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/font_rom.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'font_rom' (7#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/font_rom.v:13]
+INFO: [Synth 8-6157] synthesizing module 'time_text' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/time_text.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'time_text' (8#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/time_text.v:23]
+INFO: [Synth 8-6157] synthesizing module 'start' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/start.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'start' (9#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/start.v:23]
+INFO: [Synth 8-6157] synthesizing module 'finish' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/finish.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'finish' (10#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/finish.v:23]
+INFO: [Synth 8-6157] synthesizing module 'game_over' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/gameover.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'game_over' (11#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/gameover.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'text' (12#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/text.v:23]
+INFO: [Synth 8-6157] synthesizing module 'road' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/road.v:23]
+	Parameter MAX_X bound to: 512 - type: integer 
+	Parameter MAX_Y bound to: 480 - type: integer 
+	Parameter road_x_l bound to: 64 - type: integer 
+	Parameter road_x_r bound to: 575 - type: integer 
+	Parameter road_y_t bound to: 0 - type: integer 
+	Parameter road_y_b bound to: 479 - type: integer 
+	Parameter road_x_delta bound to: 120 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'road' (13#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/road.v:23]
+INFO: [Synth 8-6157] synthesizing module 'car' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/car.v:23]
+	Parameter MAX_X bound to: 640 - type: integer 
+	Parameter MAX_Y bound to: 480 - type: integer 
+	Parameter CAR_MAX_X bound to: 32 - type: integer 
+	Parameter CAR_MAX_Y bound to: 64 - type: integer 
+	Parameter car_y_t bound to: 410 - type: integer 
+	Parameter car_y_b bound to: 473 - type: integer 
+	Parameter CAR_VELOCITY bound to: 3'b010 
+INFO: [Synth 8-6155] done synthesizing module 'car' (14#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/car.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_gen' (15#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/pixel_gen.v:134]
+INFO: [Synth 8-6157] synthesizing module 'game_state' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/game_state.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'game_state' (16#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/game_state.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TopLevelModule' (17#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/top_level.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2797.809 ; gain = 306.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2816.660 ; gain = 325.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2816.660 ; gain = 325.605
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2816.660 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+WARNING: [Vivado 12-584] No ports matched 'R'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'L'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'L'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'R'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2925.441 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:23 . Memory (MB): peak = 2936.715 ; gain = 445.660
+38 Infos, 4 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 2936.715 ; gain = 679.219
+set_property package_pin "" [get_ports [list  {gameOver[15]}]]
+place_ports enter_key U18
+set_property IOSTANDARD LVCMOS33 [get_ports [list enter_key]]
+save_constraints
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Dec 11 17:13:43 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 17:13:43 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 3386.246 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 343 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.602 . Memory (MB): peak = 3466.285 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.603 . Memory (MB): peak = 3466.285 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3466.285 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:34 ; elapsed = 00:00:25 . Memory (MB): peak = 3540.238 ; gain = 153.992
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property is_loc_fixed true [get_ports [list  {gameOver[15]}]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Dec 11 17:19:51 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Sat Dec 11 17:25:43 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Sat Dec 11 17:28:49 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 3886.504 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 335 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+Finished Parsing XDC File [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3886.504 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+place_ports L W19
+set_property IOSTANDARD LVCMOS33 [get_ports [list L]]
+place_ports R T17
+set_property IOSTANDARD LVCMOS33 [get_ports [list R]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.219 . Memory (MB): peak = 3886.504 ; gain = 0.000
+[Sat Dec 11 17:31:11 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close [ open C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/keyboard.v w ]
+add_files C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/keyboard.v
+close [ open C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/ps2_rx.v w ]
+add_files C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/ps2_rx.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CarState' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CarState_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.sim/sim_1/behav/xsim'
+"xelab -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CarState_behav xil_defaultlib.CarState xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CarState_behav xil_defaultlib.CarState xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CarState_behav -key {Behavioral:sim_1:Functional:CarState} -tclbatch {CarState.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source CarState.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CarState_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 4163.598 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: TopLevelModule
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 4163.598 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopLevelModule' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/top_level.v:4]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/clk_div.v:3]
+	Parameter div bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/clk_div.v:3]
+INFO: [Synth 8-6157] synthesizing module 'h_count' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'h_count' (2#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'v_count' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'v_count' (3#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/vga_sync.v:3]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (4#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/vga_sync.v:3]
+INFO: [Synth 8-6157] synthesizing module 'scoreState' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/scoreState.v:3]
+INFO: [Synth 8-6157] synthesizing module 'D_FF' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/D_ff.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'D_FF' (5#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/D_ff.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'scoreState' (6#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/scoreState.v:3]
+INFO: [Synth 8-6157] synthesizing module 'keyboard' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/keyboard.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ps2_rx' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/ps2_rx.v:23]
+	Parameter idle bound to: 2'b00 
+	Parameter dps bound to: 2'b01 
+	Parameter load bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/ps2_rx.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_rx' (7#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/ps2_rx.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard' (8#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/keyboard.v:24]
+INFO: [Synth 8-6157] synthesizing module 'pixel_gen' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/pixel_gen.v:134]
+INFO: [Synth 8-6157] synthesizing module 'text' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/text.v:23]
+INFO: [Synth 8-6157] synthesizing module 'font_rom' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/font_rom.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'font_rom' (9#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/font_rom.v:13]
+INFO: [Synth 8-6157] synthesizing module 'time_text' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/time_text.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'time_text' (10#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/time_text.v:111]
+INFO: [Synth 8-6157] synthesizing module 'start' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/start.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'start' (11#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/start.v:23]
+INFO: [Synth 8-6157] synthesizing module 'finish' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/finish.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'finish' (12#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/finish.v:23]
+INFO: [Synth 8-6157] synthesizing module 'game_over' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/gameover.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'game_over' (13#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/gameover.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'text' (14#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/text.v:23]
+INFO: [Synth 8-6157] synthesizing module 'road' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/road.v:23]
+	Parameter MAX_X bound to: 512 - type: integer 
+	Parameter MAX_Y bound to: 480 - type: integer 
+	Parameter road_x_l bound to: 64 - type: integer 
+	Parameter road_x_r bound to: 575 - type: integer 
+	Parameter road_y_t bound to: 0 - type: integer 
+	Parameter road_y_b bound to: 479 - type: integer 
+	Parameter road_x_delta bound to: 120 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'road' (15#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/road.v:23]
+INFO: [Synth 8-6157] synthesizing module 'car' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/car.v:23]
+	Parameter MAX_X bound to: 640 - type: integer 
+	Parameter MAX_Y bound to: 480 - type: integer 
+	Parameter CAR_MAX_X bound to: 32 - type: integer 
+	Parameter CAR_MAX_Y bound to: 64 - type: integer 
+	Parameter car_y_t bound to: 410 - type: integer 
+	Parameter car_y_b bound to: 473 - type: integer 
+	Parameter CAR_VELOCITY bound to: 3'b010 
+INFO: [Synth 8-6155] done synthesizing module 'car' (16#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/car.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_gen' (17#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/pixel_gen.v:134]
+INFO: [Synth 8-6157] synthesizing module 'game_state' [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/game_state.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'game_state' (18#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/game_state.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TopLevelModule' (19#1) [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/top_level.v:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4163.598 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4163.598 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 4163.598 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 4163.598 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+WARNING: [Vivado 12-584] No ports matched 'enter_key'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'enter_key'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'L'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'L'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'R'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'R'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4193.066 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 4481.813 ; gain = 318.215
+42 Infos, 6 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 4481.813 ; gain = 318.215
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 17:44:18 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 17:44:18 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 17:54:52 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 17:54:52 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+current_design impl_1
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 4901.641 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 110 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.368 . Memory (MB): peak = 4901.641 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.368 . Memory (MB): peak = 4901.641 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:26 . Memory (MB): peak = 4901.641 ; gain = 88.473
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Sat Dec 11 18:06:29 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+current_design synth_1
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 4901.641 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+WARNING: [Vivado 12-584] No ports matched 'RESET'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RESET'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'H'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[5]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[4]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[3]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[5]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[4]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[3]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[2]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[1]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[0]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'H'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[14]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[13]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[12]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[11]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[10]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[9]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[8]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[7]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[6]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[2]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[1]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[15]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[14]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[13]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[12]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[11]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[10]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[8]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[9]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[7]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[6]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[0]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'enter_key'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'enter_key'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gameOver[15]'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'L'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'L'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'R'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'R'. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 4901.641 ; gain = 0.000
+place_ports reset_check L1
+place_ports {state[0]} V19
+place_ports {state[1]} E19
+place_ports {state[2]} V16
+set_property IOSTANDARD LVCMOS33 [get_ports [list {state[2]} {state[1]} {state[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset_check]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 4901.641 ; gain = 0.000
+[Sat Dec 11 18:11:25 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+current_design impl_1
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 4901.641 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.215 . Memory (MB): peak = 4901.641 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.215 . Memory (MB): peak = 4901.641 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 4901.641 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+place_ports {state[0]} U19
+save_constraints
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Sat Dec 11 18:21:59 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+current_design synth_1
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 4977.527 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+Finished Parsing XDC File [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 4977.527 ; gain = 75.887
+place_ports crash_en P1
+set_property IOSTANDARD LVCMOS33 [get_ports [list crash_en]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.135 . Memory (MB): peak = 4977.527 ; gain = 0.000
+[Sat Dec 11 18:25:05 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 18:32:59 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 18:32:59 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Sat Dec 11 18:41:15 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+close_design
+close_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 4977.527 ; gain = 0.000
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 4977.527 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 97 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+Finished Parsing XDC File [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4977.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 4977.527 ; gain = 0.000
+place_ports car_on N3
+set_property IOSTANDARD LVCMOS33 [get_ports [list car_on]]
+place_ports road_on P3
+set_property IOSTANDARD LVCMOS33 [get_ports [list road_on]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.132 . Memory (MB): peak = 4977.527 ; gain = 0.000
+[Sat Dec 11 18:44:43 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+current_design impl_1
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 5086.270 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 97 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.246 . Memory (MB): peak = 5086.270 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.246 . Memory (MB): peak = 5086.270 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 5086.270 ; gain = 108.742
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+place_ports car_on U3
+save_constraints -force
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 18:49:27 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 18:49:28 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 18:54:38 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 18:54:38 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 5086.270 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 114 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.245 . Memory (MB): peak = 5086.270 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.245 . Memory (MB): peak = 5086.270 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 5086.270 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 19:04:02 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 19:04:02 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 19:08:28 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 19:08:28 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 19:20:04 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 19:20:04 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 19:21:54 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 19:21:54 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 19:28:34 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 19:28:34 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 19:31:15 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 19:31:15 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 19:41:44 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 19:41:44 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 19:47:41 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 19:47:41 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 19:48:19 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 19:48:19 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 19:53:12 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 19:53:12 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sat Dec 11 20:00:21 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 20:02:20 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 20:02:20 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 20:07:38 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 20:07:38 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 20:12:17 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 20:12:17 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+[Sat Dec 11 20:13:16 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 20:15:02 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Dec 11 20:17:04 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 20:19:31 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 20:19:31 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 20:29:58 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 20:29:58 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Dec 11 20:34:51 2021] Launched synth_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/synth_1/runme.log
+[Sat Dec 11 20:34:51 2021] Launched impl_1...
+Run output will be captured here: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2A53A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 5086.270 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 11 20:44:27 2021...

@@ -1,0 +1,1353 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Nov 26 12:12:24 2021
+# Process ID: 6700
+# Current directory: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8876 C:\Users\mm06886\Downloads\THEREALGAME\THEREALGAME\THEREALGAME.xpr
+# Log file: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/vivado.log
+# Journal file: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1027.457 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TopLevelModule' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TopLevelModule_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module h_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyboardInput
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevelModule
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+"xelab -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelModule_behav xil_defaultlib.TopLevelModule xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelModule_behav xil_defaultlib.TopLevelModule xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v" Line 1. Module clk_div doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v" Line 2. Module h_count doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v" Line 1. Module clk_div doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v" Line 2. Module h_count doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.h_count
+Compiling module xil_defaultlib.v_count
+Compiling module xil_defaultlib.vga_sync
+Compiling module xil_defaultlib.keyboardInput
+Compiling module xil_defaultlib.pixel_gen
+Compiling module xil_defaultlib.TopLevelModule
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TopLevelModule_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TopLevelModule_behav -key {Behavioral:sim_1:Functional:TopLevelModule} -tclbatch {TopLevelModule.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TopLevelModule.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevelModule_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1027.457 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: TopLevelModule
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1426.738 ; gain = 242.133
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopLevelModule' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v:1]
+	Parameter div bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'h_count' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'h_count' (2#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'v_count' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'v_count' (3#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v:24]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (4#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v:24]
+INFO: [Synth 8-6157] synthesizing module 'keyboardInput' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'keyboardInput' (5#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_gen' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_gen' (6#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'TopLevelModule' (7#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1475.473 ; gain = 290.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1495.043 ; gain = 310.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1495.043 ; gain = 310.438
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1495.043 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1613.016 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1613.016 ; gain = 428.410
+19 Infos, 4 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1613.016 ; gain = 585.559
+set_property IOSTANDARD LVCMOS33 [get_ports [list carState]]
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1637.941 ; gain = 24.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopLevelModule' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v:1]
+	Parameter div bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'h_count' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'h_count' (2#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'v_count' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'v_count' (3#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v:24]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (4#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v:24]
+INFO: [Synth 8-6157] synthesizing module 'keyboardInput' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'keyboardInput' (5#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_gen' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_gen' (6#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'carState' does not match port width (2) of module 'pixel_gen' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'TopLevelModule' (7#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1672.840 ; gain = 59.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1695.730 ; gain = 82.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1695.730 ; gain = 82.715
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1697.098 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1785.582 ; gain = 172.566
+set_property IOSTANDARD LVCMOS33 [get_ports [list carState]]
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1881.414 ; gain = 14.793
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopLevelModule' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v:1]
+	Parameter div bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'h_count' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'h_count' (2#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'v_count' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'v_count' (3#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v:24]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (4#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v:24]
+INFO: [Synth 8-6157] synthesizing module 'keyboardInput' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'keyboardInput' (5#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_gen' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_gen' (6#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'TopLevelModule' (7#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1881.414 ; gain = 14.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1891.211 ; gain = 24.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1891.211 ; gain = 24.590
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1891.211 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1891.211 ; gain = 24.590
+set_property IOSTANDARD LVCMOS33 [get_ports [list {carState[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {carState[0]}]]
+place_ports {carState[1]} P3
+place_ports {carState[0]} N3
+save_constraints
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 26 12:22:06 2021] Launched synth_1...
+Run output will be captured here: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/synth_1/runme.log
+[Fri Nov 26 12:22:06 2021] Launched impl_1...
+Run output will be captured here: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.1
+  **** Build date : May 27 2020 at 20:24:38
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 14 2020-06:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1895.742 ; gain = 4.531
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2A53A
+set_property PROGRAM.FILE {C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 26 12:26:19 2021] Launched synth_1...
+Run output will be captured here: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/synth_1/runme.log
+[Fri Nov 26 12:26:19 2021] Launched impl_1...
+Run output will be captured here: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 26 12:31:16 2021] Launched impl_1...
+Run output will be captured here: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3234.898 ; gain = 21.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopLevelModule' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v:1]
+	Parameter div bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'h_count' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'h_count' (2#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'v_count' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'v_count' (3#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v:24]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (4#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v:24]
+INFO: [Synth 8-6157] synthesizing module 'keyboardInput' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'keyboardInput' (5#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_gen' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_gen' (6#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'TopLevelModule' (7#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3267.801 ; gain = 54.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3290.602 ; gain = 76.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3290.602 ; gain = 76.820
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3290.602 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 3 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3651.762 ; gain = 437.980
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2A53A
+set_property IOSTANDARD LVCMOS33 [get_ports [list {carState[2]}]]
+place_ports {carState[2]} U3
+refresh_design
+WARNING: [Synth 8-2611] redeclaration of ansi port carState is not allowed [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:19]
+WARNING: [Synth 8-1082] carState was previously declared with a range [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:25]
+ERROR: [Synth 8-1751] cannot index into non-array carState [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:62]
+ERROR: [Synth 8-1751] cannot index into non-array carState [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:63]
+ERROR: [Synth 8-1751] cannot index into non-array carState [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:64]
+Failed to read verilog 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v'
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 3651.762 ; gain = 0.000
+save_constraints -force
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TopLevelModule' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TopLevelModule_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module h_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyboardInput
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevelModule
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+"xelab -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelModule_behav xil_defaultlib.TopLevelModule xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelModule_behav xil_defaultlib.TopLevelModule xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v" Line 1. Module clk_div doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v" Line 2. Module h_count doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v" Line 1. Module clk_div doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v" Line 2. Module h_count doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.h_count
+Compiling module xil_defaultlib.v_count
+Compiling module xil_defaultlib.vga_sync
+Compiling module xil_defaultlib.keyboardInput
+Compiling module xil_defaultlib.pixel_gen
+Compiling module xil_defaultlib.TopLevelModule
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TopLevelModule_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TopLevelModule_behav -key {Behavioral:sim_1:Functional:TopLevelModule} -tclbatch {TopLevelModule.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TopLevelModule.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevelModule_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3651.762 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TopLevelModule' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TopLevelModule_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module h_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyboardInput
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevelModule
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+"xelab -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelModule_behav xil_defaultlib.TopLevelModule xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelModule_behav xil_defaultlib.TopLevelModule xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v" Line 1. Module clk_div doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v" Line 2. Module h_count doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v" Line 1. Module clk_div doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v" Line 2. Module h_count doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.h_count
+Compiling module xil_defaultlib.v_count
+Compiling module xil_defaultlib.vga_sync
+Compiling module xil_defaultlib.keyboardInput
+Compiling module xil_defaultlib.pixel_gen
+Compiling module xil_defaultlib.TopLevelModule
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TopLevelModule_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TopLevelModule_behav -key {Behavioral:sim_1:Functional:TopLevelModule} -tclbatch {TopLevelModule.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TopLevelModule.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevelModule_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3651.762 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 26 12:45:09 2021] Launched synth_1...
+Run output will be captured here: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/synth_1/runme.log
+[Fri Nov 26 12:45:09 2021] Launched impl_1...
+Run output will be captured here: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TopLevelModule' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TopLevelModule_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module h_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyboardInput
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevelModule
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+"xelab -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelModule_behav xil_defaultlib.TopLevelModule xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelModule_behav xil_defaultlib.TopLevelModule xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 3 for port 'defaultState' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:30]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v" Line 1. Module clk_div doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v" Line 2. Module h_count doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v" Line 1. Module clk_div doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v" Line 2. Module h_count doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.h_count
+Compiling module xil_defaultlib.v_count
+Compiling module xil_defaultlib.vga_sync
+Compiling module xil_defaultlib.keyboardInput
+Compiling module xil_defaultlib.pixel_gen
+Compiling module xil_defaultlib.TopLevelModule
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TopLevelModule_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TopLevelModule_behav -key {Behavioral:sim_1:Functional:TopLevelModule} -tclbatch {TopLevelModule.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TopLevelModule.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevelModule_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 4275.590 ; gain = 6.668
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 26 12:50:21 2021] Launched synth_1...
+Run output will be captured here: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/synth_1/runme.log
+[Fri Nov 26 12:50:21 2021] Launched impl_1...
+Run output will be captured here: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 4374.098 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 4382.145 ; gain = 0.000
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 4382.145 ; gain = 25.961
+INFO: [Common 17-344] 'open_run' was cancelled
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 26 13:11:13 2021] Launched synth_1...
+Run output will be captured here: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/synth_1/runme.log
+[Fri Nov 26 13:11:13 2021] Launched impl_1...
+Run output will be captured here: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2A53A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TopLevelModule' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TopLevelModule_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module h_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyboardInput
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevelModule
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+"xelab -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelModule_behav xil_defaultlib.TopLevelModule xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelModule_behav xil_defaultlib.TopLevelModule xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v" Line 1. Module clk_div doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v" Line 2. Module h_count doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v" Line 1. Module clk_div doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v" Line 2. Module h_count doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.h_count
+Compiling module xil_defaultlib.v_count
+Compiling module xil_defaultlib.vga_sync
+Compiling module xil_defaultlib.keyboardInput
+Compiling module xil_defaultlib.pixel_gen
+Compiling module xil_defaultlib.TopLevelModule
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TopLevelModule_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TopLevelModule_behav -key {Behavioral:sim_1:Functional:TopLevelModule} -tclbatch {TopLevelModule.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TopLevelModule.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevelModule_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 4382.145 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4382.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopLevelModule' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v:1]
+	Parameter div bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'h_count' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'h_count' (2#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'v_count' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'v_count' (3#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v:24]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (4#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v:24]
+INFO: [Synth 8-6157] synthesizing module 'keyboardInput' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'keyboardInput' (5#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_gen' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_gen' (6#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'TopLevelModule' (7#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 4382.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4382.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4382.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 4382.145 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'carState[1]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'carState[0]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'carState[1]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'carState[0]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'carState[2]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'carState[2]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 4382.145 ; gain = 0.000
+place_ports {defaultState[2]} V17
+place_ports {defaultState[1]} V16
+place_ports {defaultState[0]} W16
+set_property IOSTANDARD LVCMOS25 [get_ports [list {defaultState[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {defaultState[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {defaultState[0]}]]
+save_constraints
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 26 13:16:38 2021] Launched synth_1...
+Run output will be captured here: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/synth_1/runme.log
+[Fri Nov 26 13:16:38 2021] Launched impl_1...
+Run output will be captured here: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/impl_1/runme.log
+set_property IOSTANDARD LVCMOS33 [get_ports [list {defaultState[2]}]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 26 13:18:13 2021] Launched impl_1...
+Run output will be captured here: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/impl_1/TopLevelModule.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close [ open C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v w ]
+add_files C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v
+close [ open C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/D_ff.v w ]
+add_files C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/D_ff.v
+update_compile_order -fileset sources_1
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2A53A
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TopLevelModule' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TopLevelModule_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CarState
+INFO: [VRFC 10-2458] undeclared symbol M1, assumed default net type wire [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:39]
+INFO: [VRFC 10-2458] undeclared symbol M2, assumed default net type wire [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:39]
+INFO: [VRFC 10-2458] undeclared symbol M5, assumed default net type wire [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:40]
+INFO: [VRFC 10-2458] undeclared symbol M3, assumed default net type wire [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:40]
+INFO: [VRFC 10-2458] undeclared symbol M6, assumed default net type wire [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:41]
+INFO: [VRFC 10-2458] undeclared symbol M4, assumed default net type wire [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:41]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/D_ff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_FF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module h_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyboardInput
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevelModule
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+"xelab -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelModule_behav xil_defaultlib.TopLevelModule xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelModule_behav xil_defaultlib.TopLevelModule xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2538] module instantiation should have an instance name [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:32]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TopLevelModule' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TopLevelModule_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CarState
+INFO: [VRFC 10-2458] undeclared symbol M1, assumed default net type wire [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:39]
+INFO: [VRFC 10-2458] undeclared symbol M2, assumed default net type wire [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:39]
+INFO: [VRFC 10-2458] undeclared symbol M5, assumed default net type wire [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:40]
+INFO: [VRFC 10-2458] undeclared symbol M3, assumed default net type wire [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:40]
+INFO: [VRFC 10-2458] undeclared symbol M6, assumed default net type wire [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:41]
+INFO: [VRFC 10-2458] undeclared symbol M4, assumed default net type wire [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:41]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/D_ff.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module D_FF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module h_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyboardInput
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevelModule
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+"xelab -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelModule_behav xil_defaultlib.TopLevelModule xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelModule_behav xil_defaultlib.TopLevelModule xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.h_count
+Compiling module xil_defaultlib.v_count
+Compiling module xil_defaultlib.vga_sync
+Compiling module xil_defaultlib.keyboardInput
+Compiling module xil_defaultlib.D_FF
+Compiling module xil_defaultlib.CarState
+Compiling module xil_defaultlib.pixel_gen
+Compiling module xil_defaultlib.TopLevelModule
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TopLevelModule_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TopLevelModule_behav -key {Behavioral:sim_1:Functional:TopLevelModule} -tclbatch {TopLevelModule.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TopLevelModule.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevelModule_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 4382.145 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TopLevelModule' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TopLevelModule_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+"xelab -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelModule_behav xil_defaultlib.TopLevelModule xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 85de1b5cac274a038c341390b7b14898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelModule_behav xil_defaultlib.TopLevelModule xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TopLevelModule_behav -key {Behavioral:sim_1:Functional:TopLevelModule} -tclbatch {TopLevelModule.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TopLevelModule.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevelModule_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 4382.145 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 4382.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopLevelModule' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v:1]
+	Parameter div bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'h_count' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'h_count' (2#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'v_count' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'v_count' (3#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v:24]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (4#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v:24]
+INFO: [Synth 8-6157] synthesizing module 'keyboardInput' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'keyboardInput' (5#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CarState' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:23]
+WARNING: [Synth 8-6104] Input port 'clk' has an internal driver [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:37]
+INFO: [Synth 8-6157] synthesizing module 'D_FF' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/D_ff.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'D_FF' (6#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/D_ff.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CarState' (7#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_gen' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_gen' (8#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'TopLevelModule' (9#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 4382.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4382.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4382.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 4382.145 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'right'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'left'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'left'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'right'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'defaultState[2]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'defaultState[1]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'defaultState[0]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'defaultState[2]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'defaultState[1]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'defaultState[0]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 4382.145 ; gain = 0.000
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AF2A53A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+place_ports L V16
+place_ports R V17
+place_ports RESET W16
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 4382.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopLevelModule' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v:1]
+	Parameter div bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/clock_div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'h_count' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'h_count' (2#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/h_counter.v:2]
+INFO: [Synth 8-6157] synthesizing module 'v_count' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'v_count' (3#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/v_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v:24]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (4#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/vga_sync.v:24]
+INFO: [Synth 8-6157] synthesizing module 'keyboardInput' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'keyboardInput' (5#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/keyboardInput.v:23]
+WARNING: [Synth 8-6104] Input port 'L' has an internal driver [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:30]
+WARNING: [Synth 8-6104] Input port 'R' has an internal driver [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:30]
+INFO: [Synth 8-6157] synthesizing module 'CarState' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:23]
+WARNING: [Synth 8-6104] Input port 'clk' has an internal driver [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:37]
+INFO: [Synth 8-6157] synthesizing module 'D_FF' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/D_ff.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'D_FF' (6#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/D_ff.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CarState' (7#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/CarState.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_gen' [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_gen' (8#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/pixel_gen.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'TopLevelModule' (9#1) [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/sources_1/new/top_level.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 4382.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4382.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 4382.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 4382.145 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'right'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'left'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'left'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'right'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'defaultState[2]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'defaultState[1]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'defaultState[0]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'defaultState[2]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'defaultState[1]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'defaultState[0]'. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.srcs/constrs_1/new/dsad.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 4382.145 ; gain = 0.000
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Left[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Left[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Left[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Right[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Right[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Right[0]}]]
+set_property package_pin "" [get_ports [list  {Left[2]}]]
+place_ports {Right[2]} L1
+place_ports {Right[1]} P1
+startgroup
+set_property package_pin "" [get_ports [list  {carState[0]}]]
+place_ports {Right[0]} N3
+endgroup
+set_property package_pin "" [get_ports [list  {Left[0]}]]
+place_ports {Left[2]} U16
+place_ports {Left[1]} E19
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183AF2A53A
+place_ports {Left[0]} U19
+place_ports L V17
+place_ports R V16
+place_ports RESET W16
+place_ports {carState[0]} U1
+place_ports {carState[1]} W2
+set_property IOSTANDARD LVCMOS33 [get_ports [list R]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list RESET]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list L]]
+save_constraints
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Nov 26 13:43:09 2021] Launched synth_1...
+Run output will be captured here: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/synth_1/runme.log
+[Fri Nov 26 13:43:09 2021] Launched impl_1...
+Run output will be captured here: C:/Users/mm06886/Downloads/THEREALGAME/THEREALGAME/THEREALGAME.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 26 14:34:59 2021...
