@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.sim/sim_2/synth/func/xsim/TopLevelModule_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevelModule
+INFO: [VRFC 10-311] analyzing module font_rom
+INFO: [VRFC 10-311] analyzing module game_state
+INFO: [VRFC 10-311] analyzing module keyboard
+INFO: [VRFC 10-311] analyzing module pixel_gen
+INFO: [VRFC 10-311] analyzing module ps2_rx
+INFO: [VRFC 10-311] analyzing module text
+INFO: [VRFC 10-311] analyzing module glbl

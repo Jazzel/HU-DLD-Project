@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Dec 16 02:15:53 2021
+# Process ID: 2396
+# Current directory: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.sim/sim_2/synth/func/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.sim/sim_2/synth/func/xsim/xsim.dir/TopLevelModule_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.sim/sim_2/synth/func/xsim/webtalk.log
+# Journal file: C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.sim/sim_2/synth/func/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.sim/sim_2/synth/func/xsim/xsim.dir/TopLevelModule_func_synth/webtalk/xsim_webtalk.tcl -notrace
