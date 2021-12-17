@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../THEREALGAME.srcs/sources_1/new/car.v" \
+"../../../../THEREALGAME.srcs/sources_1/new/clk_div.v" \
+"../../../../THEREALGAME.srcs/sources_1/new/finish.v" \
+"../../../../THEREALGAME.srcs/sources_1/new/font_rom.v" \
+"../../../../THEREALGAME.srcs/sources_1/new/game_state.v" \
+"../../../../THEREALGAME.srcs/sources_1/new/gameover.v" \
+"../../../../THEREALGAME.srcs/sources_1/new/h_counter.v" \
+"../../../../THEREALGAME.srcs/sources_1/new/keyboard.v" \
+"../../../../THEREALGAME.srcs/sources_1/new/pixel_gen.v" \
+"../../../../THEREALGAME.srcs/sources_1/new/ps2_rx.v" \
+"../../../../THEREALGAME.srcs/sources_1/new/road.v" \
+"../../../../THEREALGAME.srcs/sources_1/new/start.v" \
+"../../../../THEREALGAME.srcs/sources_1/new/text.v" \
+"../../../../THEREALGAME.srcs/sources_1/new/time_text.v" \
+"../../../../THEREALGAME.srcs/sources_1/new/v_counter.v" \
+"../../../../THEREALGAME.srcs/sources_1/new/vga_sync.v" \
+"../../../../THEREALGAME.srcs/sources_1/new/top_level.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
