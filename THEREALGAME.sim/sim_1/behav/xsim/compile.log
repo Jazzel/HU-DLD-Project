@@ -1,0 +1,38 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/car.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module car
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/finish.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module finish
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/font_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module font_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/game_state.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module game_state
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/gameover.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module game_over
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/h_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module h_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/keyboard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyboard
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/pixel_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_gen
+INFO: [VRFC 10-2458] undeclared symbol text_on, assumed default net type wire [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/pixel_gen.v:129]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/ps2_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ps2_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/road.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module road
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/start.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/text.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module text
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/time_text.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_text
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/v_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module v_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/vga_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/top_level.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevelModule
+INFO: [VRFC 10-2458] undeclared symbol video_on, assumed default net type wire [C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.srcs/sources_1/new/top_level.v:97]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jazze/Desktop/my/THEREALGAME_2/THEREALGAME.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
